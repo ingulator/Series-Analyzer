@@ -1,1 +1,4 @@
-## main file
+#!/bin/bash
+
+source serialanalyzer.sh
+# 
