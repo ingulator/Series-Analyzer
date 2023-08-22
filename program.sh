@@ -88,19 +88,19 @@ function input_series(){
 
 echo "Enter different series: "  #output to enter new series
 read -a series                   #read input as array
-#echo ${series[@]}                #output the new series
+return $series
 }
 
 input_series
 
-#function display_series(){
+function display_series(){
 
 #######	this function takes the series that was recieved from the outside and
 #######	displays it in the order it was recieved (original order)
 
 #recieve array from outside
-#echo $@
-#}
+echo $@
+}
 
 
 function display_series_sorted(){
@@ -113,7 +113,6 @@ array=($(printf '%u\n' "${series[@]}" | sort -n))
 echo ${array[@]}
 }
 
-display_series_sorted $series 
 
 #The function returns a 0 if the entered input is invalid (less than 3 or contains letters)
 #otherwise, the function returns 1
