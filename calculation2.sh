@@ -17,8 +17,12 @@ function display_avg(){
     echo "display_avg\n"
 
     local arr=("$@")
+    local sum = display_sum() $arr
 
+    local len=${#arr[@]}
+    local avg=$sum/$len
 
+    return $avg
 }
 function display_min(){
     echo "display_min\n"
@@ -40,7 +44,10 @@ function display_sum(){
     echo "display_sum\n"
 
     local arr=("$@")
-  
-    #return $sum
-   
+    local sum=0
+    for elem in $sum; do
+        sum=$sum+$elem
+    done
+
+    return $sum   
 }
