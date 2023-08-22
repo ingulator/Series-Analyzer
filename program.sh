@@ -1,7 +1,3 @@
-<<<<<<< program.sh
-<<<<<<< program.sh
-<<<<<<< program.sh
-=======
 #!/bin/bash
 
 source calculation1.sh
@@ -53,9 +49,7 @@ function selectSeries(){
 function show() {
     echo $1
 }
->>>>>>> serialanalyzer.sh
-=======
-#!/bin/bash
+
 
 function input_series(){
 
@@ -89,6 +83,6 @@ echo ${array[@]}
 }
 
 display_series_sorted $series 
->>>>>>> calculation1.sh
-=======
->>>>>>> tmp.sh
+
+
+
