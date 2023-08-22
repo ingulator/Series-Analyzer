@@ -91,7 +91,6 @@ read -a series                   #read input as array
 return $series
 }
 
-input_series
 
 function display_series(){
 
