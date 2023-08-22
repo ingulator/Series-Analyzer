@@ -15,6 +15,8 @@ function validate()
         return $checker 
     fi
 
+    #Goes through our array and checks if our values are comprised of only numbers and no letters are found
+    #If letters are found then the input is invalid, prompts the user and flips the checker flag to 0
     for i in "$@"
     do
         if [[ $i =~ ^[0-9]+$ ]]
