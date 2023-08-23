@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 
 
@@ -161,7 +161,7 @@ function display_avg(){
     echo "display_avg\n"
 
     local arr=("$@")
-    local sum = display_sum() $arr
+    local sum = display_sum $arr
 
     local len=${#arr[@]}
     local avg=$sum/$len
@@ -181,7 +181,7 @@ function display_min(){
 }
 function display_count(){
     echo "display_count\n"
-    local arr = ("$@")
+    local arr = $("$@")
     return "${arr[@#]}"
 }
 function display_sum(){
